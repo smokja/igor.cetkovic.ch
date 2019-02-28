@@ -1,20 +1,25 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`blog`, `application`, `react`]} />
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+     <p>This page is still under construction. </p>
+     <p>
+        Later on, this page will be used as a blog and a homepage. You can
+       follow the development along on <a href="https://github.com/smokja/igor.cetkovic.ch">Github</a>. 
+     </p>
+     <p>
+       While you're here you can check out these other websites:
+       <p><a href="https://staging.pascalluginbuehl.ch/">Pascal Luginbuehl</a></p>
+       <p><a href="https://leonardschuetz.ch/blog">Leonard Schuetz</a></p>
+     </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
